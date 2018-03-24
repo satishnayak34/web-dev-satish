@@ -1,0 +1,113 @@
+*{
+    font-family:monospace;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+:root{
+    font-size: 20px;
+}
+.container{
+    display: block;
+    flex-direction: column;
+    margin: 0;
+    overflow-wrap: break-word;
+}
+nav{
+    background-color: gray;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 8px;
+}
+
+nav a:hover{
+    color:white;
+    background-color: black;
+}
+
+.content{
+    display: flex;
+    margin-top:20px;
+}
+.paragraph{
+    background-color: white;
+    width: 87.67%;
+    text-align: justify;
+    padding: 6px;
+    font-size: 1.5rem;  
+}
+.Image{
+    padding: 0 6px;
+    width: 24.9999%;
+    opacity:.35;
+}
+.Image:hover{
+    opacity: 100;
+}
+.gallery{
+   
+    position: relative;
+    width: 88%;
+    height: auto;
+    border-radius: 3px;
+    margin-left: auto;
+   
+    
+}
+.name{
+    position: absolute;
+    left: 1%;
+    bottom:1%;
+    padding: 12px;
+    text-align:right;
+    font-weight: 700;
+    color:floralwhite;
+    
+}
+img{
+    box-shadow: 0 4px 50px 0 rgba(0,0,0,.19), 0 4px 20px 0 rgba(0,0,0,.2);
+    border-radius: 3px;
+    text-align: right
+}
+.my-image{
+     display: block;
+}
+
+@media screen and (max-width:667px){
+    .content{
+      flex-wrap: wrap-reverse;
+      overflow-x: hidden;
+    }
+    nav ul{
+        display: block;
+        overflow-wrap: break-word;
+        }
+    .Image{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 16px;
+        width: 50%;
+    }
+    .paragraph{
+        margin-top: auto;
+        font-size: 1rem;
+        padding: 10px;
+        overflow-wrap: break-word;
+    }
+    .try{
+        overflow-wrap: break-word;
+    }
+}
